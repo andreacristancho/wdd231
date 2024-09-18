@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <! -- La siguiente meta es para para definir la configuración de visualización en dispositivos móviles. 
-    Indica a la página que coincida con el ancho de la pantalla en píxeles independientes del dispositivo.>
+    <meta charset="UTF-8"/>
+    <!-- La siguiente meta es para para definir la configuración de visualización en dispositivos móviles. 
+    Indica a la página que coincida con el ancho de la pantalla en píxeles independientes del dispositivo.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WDD 230 - Web Frontend Development I - Andrea Cristancho</title>
     <meta name="description" content="WDD 230 - Web Frontend Development I" />
@@ -13,66 +13,85 @@
   </head>
   <body>
     <header>
-      <h1>WDD 230 - Web Frontend Development I - Andrea Cristancho</h1>
-   
+      <div class="name-image">
+      <img src="images/andrea-cara.webp" alt="Andrea Image" />
+      <h1>Andrea Cristancho</h1>
+      </div>
       <nav>
+        <button id="menu"></button>
         <ul>
           <li>
-            <a
-              href="https://www.linkedin.com/in/andrea-f-cristancho-cort%C3%A9s-804629b1/"
-              >LinkedIn Profile</a
-            >
+            <a href="index.html">Home</a>
           </li>
-          <li><a href="https://byui.instructure.com/">I-Learn</a></li>
           <li>
-            <a
-              href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/40?lang=spa&id=p29-p31#p29"
-              >Scripture</a
-            >
-            
+            <a href="">Chamber</a>
           </li>
-          <li><a href=" ">Final Project</a></li>
+          <li>
+            <a href="">GitHub Profile</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/andrea-f-cristancho-cort%C3%A9s-804629b1/">LinkedIn Profile</a>
+          </li>
+  
         </ul>
       </nav>
     </header>
     <main>
-      <section class="card_1">
-        <h2 class="title-cards">About Me</h2>
-        
-        <div class="inside-card1">
-          <p>My name is Andrea Cristancho. I live in Bogota, Colombia South America. I am married and I have 3 children. Two boys of 25 and 23 years old and my daughter of 15 years old.
-            I am an industrial engineer and I worked in the communications industry. I am currently working remotely with financial consulting to individuals and small businesses. I am a web developer in training, a subject that I am passionate about.
-          </p>
-          <img src="images/andrea-cara.webp" alt="Andrea Image" />
-        </div>
-
-        <h1>Bogotá, Colombia</h2>
-
-        <div class="inside-card1">
-          <img src="images/Flag_of_Colombia.webp" alt="Flag of Colombia" />
-          <p>Colombia, a diverse and welcoming country in South America, offers breathtaking landscapes, rich culture and delicious cuisine. With mountains, jungles and beaches, it is a destination that captivates with its natural beauty. Its people are known for their hospitality and warmth. Family plays a very important role and we like to enjoy many spaces with family and friends.</p>
+      <section class="card-1">
+        <h2 class="title-cards">Course Work</h2>
+      
+        <div class="inside-card-1">
+          <ul>
+            <li><a href="">✔︎</a></li>
+            <li><a href="">✔︎</a></li>
+            <li><a href="">✔︎</a></li>
         </div>
       </section>
     
 
-      <section class="card_2">
-        <h2 class="title-cards">Web Dev Resources</h2>
+      <section class="card-2">
+        <h2 class="title-cards">Cartagena, Colombia</h2>
+        <div class="inside-card-2">
+          <img src="images/Colombia_vertical_470px.jpg" alt="Image of Colombia" />
+          <p>Cartagena Beach</p>
+        </div>
+     
+      </section>
 
-        <ul>
-          <li><a href="https://www.w3schools.com/css/css_grid.asp">W3Schools</a></li>
-          <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties">CSS Tricks</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox">MDN Web Docs</a></li>
-        </ul>
+      <section class="card-3">
+        <h2 class="title-cards">Web and Computer Programming Certificate</h2>
+        <div class="all-cse-wdd">
+          <button class="first">ALL</button>
+          <button class="first">CSE</button>
+          <button class="first">WDD</button>
+        </div>
+        <button class="second">CSE110</button>
+        <button class="second">WDD130</button>
+        <button class="second">CSE111</button>
+        <button class="second">CSE210</button>
+        <button class="second">WDD131</button>
+        <div>
+
+        </div>
+
       </section>
     </main>
 
+ 
     <footer>
       <p>
-        <span id="currentyear"></span>
-        Andrea Fernanda Cristancho. Colombia
+        <div>&copy; <span id="currentyear"></div>
+        <span>Andrea Fernanda Cristancho</span>
+        <div>
+        <span>Colombia <img src="images/Flag_of_Colombia.webp" alt="Colombian Flag" /></span>
+      </div>
       </p>
       <p id="lastModified"></p>
     </footer>
+
+
+
+
   </body>
 </html>
 
