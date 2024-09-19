@@ -37,7 +37,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -50,7 +50,7 @@ const courses = [
           'HTML',
           'CSS'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -62,7 +62,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -74,7 +74,7 @@ const courses = [
       technology: [
           'C#'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -88,7 +88,7 @@ const courses = [
           'CSS',
           'JavaScript'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -122,13 +122,14 @@ const displayCourses = (courses) => {
 
   courses.forEach((course) => {
       const article = document.createElement("article");
-      
+
+  
+      article.classList.add(course.completed ? "completed" : "no-completed");
+
       const h3 = document.createElement("h3");
-      h3.textContent =course.subject;
-
-      const h2 = document.createElement("h2");
-      h2.innerHTML = `<span class="number">Number: </span> ${course.number}`;
-
+      h3.textContent = `${course.subject} ${course.number}`; 
+      h3.classList.add("course-title");
+    
       const pTitle = document.createElement("p");
       pTitle.innerHTML = `<span class="label"> Title: </span> ${course.title}`;
 
@@ -139,21 +140,22 @@ const displayCourses = (courses) => {
       pCertificate.innerHTML = `<span class="label"> Certificate: </span> ${course.certificate}`;
 
       const pCompleted = document.createElement("p");
-      pCompleted.innerHTML = `<span class="label"> Completed: </span> ${course.completed}`;
+    pCompleted.innerHTML = `<span class="label"> Completed: </span> ${course.completed ? "Yes" : "No"}`;
       
       article.appendChild(h3);
-      article.appendChild(h2);
       article.appendChild(pTitle);
       article.appendChild(pCredits);
       article.appendChild(pCertificate);
       article.appendChild(pCompleted);
 
       coursesElement.appendChild(article);
+      
 
   });
  }
 
-displayCourses(courses);
+ displayCourses(courses);
+
 
 const allLink = document.querySelector("#All");
 const cseLink = document.querySelector("#CSE");
@@ -185,6 +187,35 @@ wddLink.addEventListener("click", (e) => {
 
 
 
+ const calculateCredits = (courses) => {
+    let totalCredits = 0;  // Total de créditos requeridos
+    let completedCredits = 0;  // Total de créditos completados
+  
+    courses.forEach((course) => {
+      totalCredits += course.credits;  // Sumar créditos de todos los cursos
+      if (course.completed) {
+        completedCredits += course.credits;  // Sumar créditos solo de los cursos completados
+      }
+    });
 
-displayCourses(courses);
 
+    // Si deseas mostrar estos valores en el DOM, puedes hacerlo así:
+    const creditsSummary = document.createElement("divCredits");
+    creditsSummary.innerHTML = `
+      <p><strong>Total de créditos requeridos:</strong> ${totalCredits}</p>
+      <p><strong>Créditos completados:</strong> ${completedCredits}</p>
+    `;
+    coursesElement.appendChild(creditsSummary); // Agregar resumen al contenedor de cursos
+  }
+  
+
+calculateCredits(courses); // Calcular y mostrar los créditos
+
+
+
+
+
+
+
+
+  
