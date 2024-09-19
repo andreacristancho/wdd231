@@ -256,6 +256,16 @@ button.second:hover {
   border: 1px solid rgb(105, 104, 104);
 }
 
+
+.buttons {
+  margin:20px;
+  padding: 10px;;
+  gap:20px
+}
+
+article {
+  color:black;
+}
 footer {
   display: block;
   background-color: #184e77;
