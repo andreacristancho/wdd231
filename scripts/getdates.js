@@ -199,11 +199,11 @@ wddLink.addEventListener("click", (e) => {
     });
 
 
-    // Si deseas mostrar estos valores en el DOM, puedes hacerlo así:
+    // Mostrar estos valores en el DOM, puedes hacerlo así:
     const creditsSummary = document.createElement("divCredits");
     creditsSummary.innerHTML = `
-      <p><strong>Total de créditos requeridos:</strong> ${totalCredits}</p>
-      <p><strong>Créditos completados:</strong> ${completedCredits}</p>
+      <p><strong>Total credits required:</strong> ${totalCredits}</p>
+      <p><strong>Credits completed:</strong> ${completedCredits}</p>
     `;
     coursesElement.appendChild(creditsSummary); // Agregar resumen al contenedor de cursos
   }
