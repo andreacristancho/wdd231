@@ -80,6 +80,9 @@ nav {
   
 }
 
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
 
 nav ul {
   list-style: none;
