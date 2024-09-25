@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Hotel Ciudad Bonita",
+    "sector": "Service",
+    "address": "Cll 35 # 22-01",
+    "phone": "607 6350101",
+    "URL": "https://hotelciudadbonita.com/",
+    "imgurl": "https://hotelciudadbonita.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2021-09-07-at-2.56.41-PM-qm9rygr882luc28og2k5lzjhwwpdx7lp1inhzyrvyg.jpeg",
+    "membership-level": ["3=gold"]
+  },
+  {
+    "name": "Ventanar",
+    "sector": "Production",
+    "address": "Cra 17 #59-51",
+    "phone": "607 6898007",
+    "URL": "https://ventanar.com/",
+    "imgurl": "https://ventanar.com/wp-content/uploads/2017/04/Mockup-Ventanar-04.png",
+    "membership-level": ["3=gold"]
+  }
+]
