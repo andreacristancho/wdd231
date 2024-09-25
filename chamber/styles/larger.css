@@ -1,0 +1,55 @@
+@media only screen and (min-width: 500px) {
+
+
+nav.nav&menu open {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-items: end;
+    }
+button#menu {
+    display: none;
+}
+
+ul.menu-links, ul.menu-links.open {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.menu-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-items: end;
+    
+  }
+ul.menu-links li a {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+    justify-items:flex-end;
+    text-decoration: none;
+    color: white;
+  }
+
+  .open a {
+
+    gap: 0.5rem;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    
+  }
+
+
+  #dark-button { /*REVISAR ESTE COD DE DARK Y MIRAR JS*/
+    content: "🕶️";
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    
+  }
+}
+
