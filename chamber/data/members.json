@@ -4,8 +4,8 @@
     "sector": "Service",
     "address": "Cll 35 # 22-01",
     "phone": "607 6350101",
-    "URL": "https://hotelciudadbonita.com/",
-    "imgurl": "https://hotelciudadbonita.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2021-09-07-at-2.56.41-PM-qm9rygr882luc28og2k5lzjhwwpdx7lp1inhzyrvyg.jpeg",
+    "URL": "https://hotelciudadbonita.com",
+    "imgName": "images/logo-ciudad-bonita.webp",
     "membership-level": ["3=gold"]
   },
   {
@@ -13,8 +13,65 @@
     "sector": "Production",
     "address": "Cra 17 #59-51",
     "phone": "607 6898007",
-    "URL": "https://ventanar.com/",
-    "imgurl": "https://ventanar.com/wp-content/uploads/2017/04/Mockup-Ventanar-04.png",
+    "URL": "https://ventanar.com",
+    "imgName": "images/logo-ventanar.webp",
     "membership-level": ["3=gold"]
+  },
+
+  {
+    "name": "Compumax Computer SAS",
+    "sector": "Production",
+    "address": "Cra. 106 15-25 Manz 15",
+    "phone": "(601) 5806600",
+    "URL": "https://www.compumax.com.co",
+    "imgName": "images/logo-compumax.webp",
+    "membership-level": [
+      "3=gold"
+    ]
+  },
+  {
+    "name": "Fruexcol Ltda.",
+    "sector": "Production",
+    "address": "Km. 9,1 Vía Bga-Costa",
+    "phone": "6076300210",
+    "URL": "https://fruexcol.com",
+    "imgName": "images/logo-fruexcol.webp",
+    "membership-level": [
+      "2=silver"
+    ]
+  },
+  {
+    "name": "Restaurante Mercagan Parrilla",
+    "sector": "Services",
+    "address": "Cra. 34 #44-84",
+    "phone": "6076458990",
+    "URL": "https://restaurantemercagan.com",
+    "imgName": "images/logo-mercagan.webp",
+    "membership-level": [
+      "1=member"
+    ]
+  },
+  {
+    "name": "Hospital Internacional de Colombia",
+    "sector": "Services",
+    "address": "Calle 155 A # 23 58",
+    "phone": "6076520088",
+    "URL": "https://hic.fcv.org",
+    "imgName": "images/logo-hic.webp",
+    "membership-level": [
+      "2=silver"
+    ]
+  },
+  {
+    "name": "Mac Pollo",
+    "sector": "Production",
+    "address": "Cra 33 No. 34-25",
+    "phone": "6076434427",
+    "URL": "https://www.macpollo.com",
+    "imgName": "images/logo-macpollo.webp",
+    "membership-level": [
+      "2=silver"
+    ]
   }
+
 ]

@@ -51,50 +51,76 @@ const displayMembers = (members) => {
 
   members.forEach((member) => {
     let card = document.createElement("section");
+    card.classList.add("article");
     
     // Título del miembro
     let h2 = document.createElement("h2");
-    h2.textContent = member.name;
+    h2.innerHTML = `<span class="business-title"> ${member.name}</span>`;
 
+    let h3 = document.createElement("h3");
+    h3.innerHTML = `<span class="pSector"> ${member.sector}</span>`;
+   
     // Contenedor de estadísticas
-    let stats = document.createElement("div");
-    stats.classList.add("stats");
 
-    let sectorMember = document.createElement("p");
-    sectorMember.innerHTML = `<span class="label">Sector:</span> ${member.sector}`;
+    //let stats = document.createElement("div");
+    //stats.classList.add("stats");
     
+    //let sectorMember = document.createElement("p");
+    //sectorMember.innerHTML = `<span class="pSector"></span>${member.sector}`;
+    let grid = document.createElement("div");
+    grid.classList.add("grid");
+
     let addressMember = document.createElement("p");
-    addressMember.innerHTML = `<span class="label">Address:</span> ${member.address}`;
+    addressMember.innerHTML = `<span class="label">ADDRESS:</span> ${member.address}`;
+    
+    let text = document.createElement("div");
+    text.classList.add("text");
     
     let num = document.createElement("p");
-    num.innerHTML = `<span class="label">Phone:</span> ${member.phone}`;
+    num.innerHTML = `<span class="label">PHONE:</span> ${member.phone}`;
     
     let urlMember = document.createElement("a");
     urlMember.href = member.URL;
-    urlMember.innerHTML = `Visit Member's Website`;
+    urlMember.innerHTML = `<span class="label">URL:</span>${member.URL}`;
 
     let membershipLevel = document.createElement("p");
     membershipLevel.innerHTML = `<span class="label">Membership Level:</span> ${member['membership-level']}`;
 
+    let imgLogo = document.createElement("div");
+    imgLogo.classList.add("imgLogo");
     // Imagen del miembro
     let portrait = document.createElement("img");
-    portrait.setAttribute("src", member.imgurl);
+    portrait.setAttribute("src", member.imgName);
     portrait.setAttribute("alt", `${member.name}`);
     portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "340");
-    portrait.setAttribute("height", "440");
+    portrait.setAttribute("width", "85");
+    portrait.setAttribute("height", "110");
 
     // Agregar estadísticas al contenedor de estadísticas
-    stats.appendChild(sectorMember);
-    stats.appendChild(addressMember);
-    stats.appendChild(num);
-    stats.appendChild(urlMember);
-    stats.appendChild(membershipLevel);
+    //stats.appendChild(sectorMember);
+    //stats.appendChild(addressMember);
+    //stats.appendChild(num);
+    //stats.appendChild(urlMember);
+    //stats.appendChild(portrait)
+    //stats.appendChild(membershipLevel);
+    
+   
+    text.appendChild(addressMember);
+    text.appendChild(num);
+    text.appendChild(urlMember);
+    imgLogo.appendChild(portrait)
+    //stats.appendChild(membershipLevel);
+    grid.appendChild(text);
+    grid.appendChild(imgLogo);
     
     // Agregar título, estadísticas y la imagen a la tarjeta
     card.appendChild(h2);
-    card.appendChild(stats);
-    card.appendChild(portrait);
+    card.appendChild(h3);
+    card.appendChild(grid);
+  
+   
+    
+    //card.appendChild(portrait);
     
     // Añadir la tarjeta al contenedor de cards
     cards.appendChild(card);
