@@ -16,7 +16,7 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
-const url = '../data/members.json';
+const url = 'data/members.json';
 
 // Función para obtener los datos JSON
 const getMembers = async () => {
