@@ -1,6 +1,23 @@
 @media only screen and (min-width: 500px) {
 
+  header {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+   
+  
+  }
 
+
+  .name-image {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+   
+  
+  
+}
 nav.nav&menu open {
     display: flex;
     flex-direction: row;
@@ -13,25 +30,29 @@ button#menu {
 
 ul.menu-links, ul.menu-links.open {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    column-gap: 80px;
 }
 
 
 .menu-links {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    justify-items: end;
+    
     
   }
 ul.menu-links li a {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: end;
-    justify-items:flex-end;
     text-decoration: none;
     color: white;
+    font-size: 2rem;
+  }
+  ul.menu-links li a:hover {
+    background-color: var(--color-terciario);
+    color: black;
+    font-size: 2rem;
   }
 
   .open a {
@@ -49,6 +70,16 @@ ul.menu-links li a {
     position: absolute;
     top: 6rem;
     right: 1rem;
+    
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    margin: 0;
+    
     
   }
 }
