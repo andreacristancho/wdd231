@@ -168,7 +168,7 @@ button#menu {
     
   }
   
-  
+ 
   .active::before {
     content: "✔︎";
     color: white;
@@ -258,7 +258,7 @@ h1, h2 {
   border-radius: 10px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   background-color: #fff; /* Fondo blanco */
-  margin:20px;
+  margin:30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
 }
 
@@ -270,20 +270,19 @@ h1, h2 {
  
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr auto  1fr auto ;
-  grid-template-rows: 1fr;
+.togleView {
+  padding: 1rem;
+  font-weight: 700;
 }
 
-.label {
-  
-  align-items: end;
-  justify-items: end;
-  color: rgb(93, 89, 90);
-  font-size: 1.2rem;
-  font-weight: 800;
-}
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat((auto-fit,minmax(200px, 1fr)));
+  grid-gap: 5px;
+  align-items: center;
+  }
+
+
 
 .members {
  display: flex;
@@ -303,10 +302,62 @@ h1, h2 {
 .imgLogo {
   grid-column: 1/2;
   grid-row: 1/2;
-  max-width: 10%;
-  max-height: 10%;
-  margin: 2px;
+}
 
+/* para vista tipo columnas*/
+
+
+.list-view .text {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr; /* 4 columnas: nombre, dirección, teléfono, URL */
+  grid-gap: 10px; /* Espacio entre columnas */
+  padding: 10px;
+  background-color: #f1f1f1; /* Color de fondo para el artículo */
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.business-title {
+  font-weight: bold;
+  grid-column: 1 / span 1; /* Primera columna */
+  align-self: center; /* Centra verticalmente */
+}
+
+.text p {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  display: contents;
+}
+
+.text p:nth-child(1) {
+  grid-column: 2/ span 1; /* Segunda columna: Dirección */
+}
+
+.text p:nth-child(2) {
+  grid-column: 3 / span 1; /* Tercera columna: Teléfono */
+  text-align: center;
+}
+
+.text p:nth-child(3) {
+  grid-column: 4/ span 1; /* Cuarta columna: URL */
+  text-align: right;
+  color: blue;
+  text-decoration: underline;
+}
+
+article:nth-child(even) {
+  background-color: #e0f7fa; /* Color de fondo alternativo */
+}
+
+.list-view .imgLogo {
+  display: none;
+}
+
+.list-view .pSector {
+display: none;
 }
 
 footer {

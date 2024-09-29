@@ -128,3 +128,24 @@ const displayMembers = (members) => {
 };
 
 getMembers(); // Llamada para mostrar los miembros
+
+
+
+const gridbutton = document.querySelector("#grid-view");
+const listbutton = document.querySelector("#list-view");
+const display = document.querySelector("div.cards");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid-view");
+	display.classList.remove("list-view");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list-view");
+	display.classList.remove("grid-view");
+}
