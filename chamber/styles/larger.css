@@ -12,12 +12,9 @@
   .name-image {
     display: flex;
     align-items: center;
-    justify-content: left;
-    
-   
-  
-  
+    justify-content: left;  
 }
+
 header.nav header menu  open {
     display: flex;
     flex-direction: row;
