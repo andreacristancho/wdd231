@@ -276,9 +276,20 @@ padding-bottom: 20px;
 display: grid;
 grid-template-columns: 1fr auto  1fr auto ;
 grid-template-rows: 1fr;
+}
+
+/* PARA GRID Y LIS VIEW*/
 .togleView {
-padding: 1rem;
-font-weight: 700;
+margin: 1rem auto;
+border: 1px solid;
+background-color: var(--color-fondo);
+text-align: center;
+}
+
+.togleView button {
+  padding: 1rem;
+  font-weight: 700;
+
 }
 
 .label {
@@ -289,6 +300,7 @@ color: rgb(93, 89, 90);
 font-size: 1.2rem;
 font-weight: 800;
 }
+
 .grid-view {
 display: grid;
 grid-template-columns: repeat((auto-fit,minmax(200px, 1fr)));
@@ -319,24 +331,32 @@ max-height: 10%;
 margin: 2px;
 }
 /* para vista tipo columnas*/
-  /*.list-view .text {
-  /*display: grid;
-  /*grid-template-columns: 1fr 2fr 1fr 2fr; /* 4 columnas: nombre, dirección, teléfono, URL */
-  /*grid-gap: 10px; /* Espacio entre columnas */
-  /*padding: 10px;
-  /*background-color: #f1f1f1; /* Color de fondo para el artículo */
-  /*border: 1px solid #ccc;
-  /*margin-bottom: 10px;
-  /*}
-  /*.business-title {
-  /*font-weight: bold;
-  /*grid-column: 1 / span 1; /* Primera columna */
-  /*align-self: center; /* Centra verticalmente */
-  /*}
-  /*.text p {
-  /*margin: 0;
-  /*padding: 0;
-  /*}
+
+  .list-view {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .list-view .article {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr; /* 4 columnas: nombre, dirección, teléfono, URL */
+  grid-gap: 10px; /* Espacio entre columnas */
+  margin:0;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  
+  }
+
+  .business-title {
+  font-weight: bold;
+  grid-column: 1 / span 1; /* Primera columna */
+  align-self: center; /* Centra verticalmente */
+ 
+}
+  .text p {
+  margin: 0;
+  padding: 0;
+  }
   /*
   /*.text p:nth-child(1) {
   /*grid-column: 2/ span 1; /* Segunda columna: Dirección */
@@ -353,18 +373,21 @@ margin: 2px;
   /*}
   /*article:nth-child(even) {
   /*background-color: #e0f7fa; /* Color de fondo alternativo */
-  /*}
-  /*.list-view .imgLogo {
-  /*display: none;
-  /*} */
+  /*}  */
+  
+  .list-view .imgLogo {
+  display: none;
+  } 
 
 
 
 footer {
 background-color: var(--color-secundario);
 display: block;
+flex-direction: row;
 margin: 0;
 gap:20px;
+max-width: 100%;
 }
 
 .ubication-data {
@@ -399,4 +422,3 @@ font-size: 1rem;
 
 }
 
-}
