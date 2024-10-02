@@ -1,6 +1,6 @@
 :root {
-  --color-primario: #D90429;  
-  --color-secundario: #EF233C; 
+  --color-primario: #c1121f;  
+  --color-secundario: #780000; 
   --color-terciario: #EDF2F4;  
   --color-neutro: #8D99AE;     
   --color-fondo: #2B2D42;      
@@ -218,6 +218,9 @@ h1, h2 {
 color: white;
 }
 
+.title {
+  color: var(--color-primario)
+}
 .cards-block {
 border: #8D99AE;
 background-color: var(--color-terciario);
@@ -303,7 +306,7 @@ font-weight: 800;
 
 .grid-view {
 display: grid;
-grid-template-columns: repeat((auto-fit,minmax(200px, 1fr)));
+grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
 grid-gap: 5px;
 align-items: center;
 }
