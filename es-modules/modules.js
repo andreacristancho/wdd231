@@ -1,6 +1,6 @@
 //modules.js
 
-import aCourse from "./scripts/course.mjs"
+import aCourse from "./scripts/course.mjs";
 
 aCourse.init();
 document.querySelector("#enrollStudent").addEventListener("click", function () {
