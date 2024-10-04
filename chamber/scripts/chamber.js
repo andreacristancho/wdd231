@@ -60,13 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
       let h3 = document.createElement("h3");
       h3.innerHTML = `<span class="pSector"> ${member.sector}</span>`;
   
-      // Contenedor de estadísticas
-  
-      //let stats = document.createElement("div");
-      //stats.classList.add("stats");
-  
-      //let sectorMember = document.createElement("p");
-      //sectorMember.innerHTML = `<span class="pSector"></span>${member.sector}`;
       let grid = document.createElement("div");
       grid.classList.add("grid");
   
@@ -96,20 +89,11 @@ document.addEventListener("DOMContentLoaded", function () {
       portrait.setAttribute("width", "85");
       portrait.setAttribute("height", "110");
   
-      // Agregar estadísticas al contenedor de estadísticas
-      //stats.appendChild(sectorMember);
-      //stats.appendChild(addressMember);
-      //stats.appendChild(num);
-      //stats.appendChild(urlMember);
-      //stats.appendChild(portrait)
-      //stats.appendChild(membershipLevel);
-  
-  
+
       text.appendChild(addressMember);
       text.appendChild(num);
       text.appendChild(urlMember);
       imgLogo.appendChild(portrait)
-      //stats.appendChild(membershipLevel);
       grid.appendChild(text);
       grid.appendChild(imgLogo);
   
@@ -118,15 +102,12 @@ document.addEventListener("DOMContentLoaded", function () {
       card.appendChild(h3);
       card.appendChild(grid);
   
-  
-  
-      //card.appendChild(portrait);
-  
       // Añadir la tarjeta al contenedor de cards
       cards.appendChild(card);
     });
   };
   
+  // Este código era para ver todos los members tomados del JSON
   getMembers(); // Llamada para mostrar los miembros
   const gridbutton = document.querySelector("#grid-view");
   const listbutton = document.querySelector("#list-view");
@@ -142,3 +123,35 @@ document.addEventListener("DOMContentLoaded", function () {
       display.classList.add("list-view");
       display.classList.remove("grid-view");
   }
+
+
+  
+  // Este código es para obtener miembros filtrados (silver y gold) y mostrar 3 aleatorios 
+const getRandomMembers = (members) => {
+  // Filtrar miembros por nivel de membresía "gold" o "silver"
+  const filteredMembers = members.filter(member =>
+    member['membership-level'].includes("3=gold") || member['membership-level'].includes("2=silver")
+  );
+
+  // Mezclar miembros aleatoriamente
+  const shuffledMembers = filteredMembers.sort(() => Math.random() - 0.5);
+
+  // Seleccionar los primeros 3 miembros
+  return shuffledMembers.slice(0, 3);
+};
+
+// Modificar la función para obtener los datos iniciales
+const getNewMembers = async () => {
+
+  try {
+    const members = await jsonFetch(url);
+    const randomMembers = getRandomMembers(members);
+    console.log(randomMembers);
+    displayMembers(randomMembers);
+  } catch (error) {
+    console.error('Error fetching the members', error);
+  }
+};
+
+
+getNewMembers(); // Mantener la llamada para mostrar los miembros
