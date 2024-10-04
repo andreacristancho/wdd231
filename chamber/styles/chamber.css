@@ -166,8 +166,8 @@ nav a {
   flex-direction: column;
   justify-content: end;
   justify-items: end;
-  color: var(--color-fondo);
-  background-color: black;
+  color: var(--color-terciario);
+  background-color: var(--primary);
   margin: 0;
   margin-right: 50px;
   margin-top: 5px;
@@ -297,6 +297,15 @@ border-radius: 15px 15px 15px 15px;
 #weatherDiv  {
   display: flex;
   background-color: black;
+}
+
+.weatherIcon {
+  font-size: 2rem;
+
+}
+
+.weatherText {
+  color: black;
 }
 
 #iconDiv {
