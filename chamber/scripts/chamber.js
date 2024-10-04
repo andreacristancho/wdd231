@@ -155,3 +155,86 @@ const getNewMembers = async () => {
 
 
 getNewMembers(); // Mantener la llamada para mostrar los miembros
+
+
+
+// Código para Current Weather 
+
+const weatherIcon = document.getElementById("iconDiv");
+const weatherText = document.getElementById("textDiv");
+const forecastDiv = document.getElementById("forecast");
+
+ //CREATE REQUIRED VARIABLES FOR THE URL
+const myKey ="6ccfcd1ca0103252f02bb6825391a4b6"
+const myLat="4.61"
+const myLong="74.07"
+
+
+//CONSTRUCT A FULL PATH USING TEMPLATE LITERALS
+
+const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+const url4d = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&units=metric&appid=${myKey}`;
+      
+
+           
+async function weather() {
+  try {
+      const response = await fetch(myUrl);
+      if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          displayWeather(data);
+      }
+      else {
+          throw Error(await response.text());
+      }
+  } catch (error) {
+      console.log(error);
+  };
+};
+
+
+const displayWeather = (data) => {
+  console.log("hello"); //Prueba de que la info está leyéndose bien hasta acá
+  
+  weatherIcon.innerHTML = "";
+  weatherText.innerHTML = "";
+
+  const icon = document.createElement("img");
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  const desc = data.weather[0].description;
+  const temp = document.createElement("p");
+  const weatherStatus = document.createElement("p");
+  const high = document.createElement("p");
+  const low = document.createElement("p");
+  const humidity = document.createElement("p");
+  const sunrise = document.createElement("p");
+  const sunset = document.createElement("p");
+
+
+
+  icon.setAttribute("src", iconsrc);
+  icon.setAttribute("alt", desc);
+
+  temp.innerHTML = `${data.main.temp}&deg;C`;
+  weatherStatus.innerHTML = `${data.weather[0].description}`;
+  high.innerHTML = `High: ${data.main.temp_max}&deg;C`;
+  low.innerHTML = `Low: ${data.main.temp_min}&deg;C`;
+  humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+  sunrise.innerHTML = `Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}`;
+  sunset.innerHTML = `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}`;
+
+  weatherIcon.appendChild(icon);
+  weatherText.appendChild(temp);
+  weatherText.appendChild(weatherStatus);
+  weatherText.appendChild(high);
+  weatherText.appendChild(low);
+  weatherText.appendChild(humidity);
+  weatherText.appendChild(sunrise);
+  weatherText.appendChild(sunset);
+
+  const today = document.createElement("p");
+  today.innerHTML = `Today <strong>${data.main.temp}&deg;C</strong>`
+  forecastDiv.appendChild(today);
+}
+

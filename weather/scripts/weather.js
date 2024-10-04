@@ -12,6 +12,7 @@ const myLong="6.63"
 //CONSTRUCT A FULL PATH USING TEMPLATE LITERALS
 
 const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+
 async function apiFetch() {
     try {
       // Realiza la solicitud a la API

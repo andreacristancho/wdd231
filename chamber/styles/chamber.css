@@ -260,7 +260,6 @@ color: white;
 }
 .cards-block {
 border: #8D99AE;
-background-color: var(--color-terciario);
 display: block;
 }
 
@@ -286,6 +285,22 @@ border-radius: 15px 15px 15px 15px;
 .current-menu-item {
 font-size: 1.5rem;
 }
+/* Sección Current Weather */
+
+#weatherDiv  {
+  display: flex;
+  background-color: black;
+}
+
+#iconDiv {
+  display: flex;
+}
+
+#textDiv {
+  display: flex;
+}
+
+
 
 .cards {
 margin-right: 7px;
