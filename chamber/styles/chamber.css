@@ -129,10 +129,13 @@ button#menu {
 }
 
 
-
 .current-menu-item {
-  background-color: #a6031e;
+  background-color: var(--color-secundario);
+  color: #2B2D42;
+  padding: 5px;
 }
+
+
 
 nav a {
   display: none;
@@ -160,8 +163,8 @@ nav a {
   flex-direction: column;
   justify-content: end;
   justify-items: end;
-  color: var(--color-terciario);
-  background-color: var(--primary);
+  color: var(--color-fondo);
+  background-color: black;
   margin: 0;
   margin-right: 50px;
   margin-top: 5px;
@@ -184,11 +187,14 @@ padding: 10px 35px;
 }
 
 #dark-button { /*REVISAR ESTE COD DE DARK Y MIRAR JS*/
-content: "🕶️";
-position: absolute;
-top: 2.5rem;
-right: 1rem;
 
+position: absolute;
+font-size: 2rem;
+top: 3.0rem;
+right: 1.5rem;
+z-index: 1;
+background-color: none;
+border: none;
 }
 
 main {
@@ -282,9 +288,7 @@ margin: 10px;
 border-radius: 15px 15px 15px 15px;
 }
 
-.current-menu-item {
-font-size: 1.5rem;
-}
+
 /* Sección Current Weather */
 
 #weatherDiv  {

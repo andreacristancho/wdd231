@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="WDD 231 - Chamber of commerce">
     <meta property="og:image" content="https://andreacristancho.github.io/wdd231/chamber/images/chamber-logo.webp">
-    <meta property="og:url" content="https://andreacristancho.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://andreacristancho.github.io/wdd231/chamber/index.html">
     <meta property="og:image" content="https://andreacristancho.github.io/wdd231/chamber/images/bogota-image-500px.webp">
     <meta name="twitter:card" content="summary">
 
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/chamber.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <script src="scripts/chamber-directory.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,8 +56,8 @@
             <button id="dark-button">🌓</button> 
             
               <ul class="menu-links">
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li class="current-menu-item"><a href="directory.html" title="Directory">Directory</a></li> 
+                <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li> 
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="">Join</a></li>
                 <li><a href="">Discover</a></li>
               </ul>
@@ -90,7 +90,11 @@
       </picture>
       </div>
 
-      <h1 class="title">Directory Page</h1>
+      <div class="button-box">
+        <button id="join-us">Join Us</button>
+      </div>
+    </div>
+      <h1 class="title">Home</h1>
 
       <div class="cards-block">
 
@@ -121,10 +125,10 @@
       </div>
 
   
-      <!--Muestra todos los member en Directory-->
-      <div class="cards"></div>
-      <div class="cards-random"></div>
-      
+
+      <div class="cards">
+   
+      </div>
 
       
     </main>
