@@ -166,8 +166,8 @@ const forecastDiv = document.getElementById("forecast");
 
  //CREATE REQUIRED VARIABLES FOR THE URL
 const myKey ="6ccfcd1ca0103252f02bb6825391a4b6"
-const myLat="4.61"
-const myLong="74.07"
+const myLat="49.76"
+const myLong="6.63"
 
 
 //CONSTRUCT A FULL PATH USING TEMPLATE LITERALS
@@ -237,4 +237,47 @@ const displayWeather = (data) => {
   today.innerHTML = `Today <strong>${data.main.temp}&deg;C</strong>`
   forecastDiv.appendChild(today);
 }
+
+weather();
+
+
+async function forecast() {
+  try {
+      const response = await fetch(url4d);
+      if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          displayForecast(data);
+      }
+      else {
+          throw Error(await response.text());
+      }
+  } catch (error) {
+      console.log(error);
+  };
+};
+
+
+const displayForecast = (data) => {
+
+  
+
+  const tomorrow = document.createElement("p");
+  const afterTomorrow = document.createElement("p");
+  const threeDaysAfter = document.createElement("p");
+
+  const tomorrowDate = new Date(data.list[5].dt * 1000);
+  const afterTomorrowDate = new Date(data.list[15].dt * 1000);
+  const threeDaysAfterDate = new Date(data.list[25].dt * 1000);
+
+  tomorrow.innerHTML = `${tomorrowDate.toDateString()}: <strong>${data.list[3].main.temp}&deg;C</strong>`;
+  afterTomorrow.innerHTML = `${afterTomorrowDate.toDateString()}: <strong>${data.list[11].main.temp}&deg;C</strong>`;
+  threeDaysAfter.innerHTML = `${threeDaysAfterDate.toDateString()}: <strong>${data.list[19].main.temp}&deg;C</strong>`;
+
+  forecastDiv.appendChild(tomorrow);
+  forecastDiv.appendChild(afterTomorrow);
+  forecastDiv.appendChild(threeDaysAfter);
+}
+
+forecast();
 
