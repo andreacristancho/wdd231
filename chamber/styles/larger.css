@@ -48,7 +48,7 @@
     ul.menu-links li a:hover {
       background-color: var(--color-terciario);
       color: black;
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
 
     .open a {
@@ -77,6 +77,7 @@
     }
 
   
+  
  
   .grid {
     display: grid;
@@ -87,7 +88,7 @@
     }
 
     .grid-view {
-      grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
       grid-gap: 5px;
       align-items: center;
       
@@ -98,7 +99,7 @@
       flex-direction: column;
       margin-bottom: 20px;
       max-width: 100%;
-    }
+    }*/
   
     .list-view .article {
     display: grid;
@@ -165,9 +166,6 @@
     
 
 
-    
-    
-
     .footer-items {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -187,5 +185,120 @@
       grid-column: 3/4;
       margin: 20px;
     }
+
+  }
+
+/* ----    MEDIA QUERY DESKTOP ----  */
+
+@media only screen and (min-width: 1080px) {
+
+
+  .header-section {
+    margin-left: 50px;
+    font-size: 3.5rem;
+  }
+
+
+
+  .name-image {
+    display: flex;
+    align-items: center;
+    justify-content: left;  
+    margin-left: 15% ;
+  }
+
+
+  .name-image h2, .name-image h1 {
+    margin-left: 3%;
+  }
+
+.name-image h2 {
+  font-size: 2.5rem;
 }
 
+  .nav .menu{
+    margin-top: 10px;
+
+  }
+
+  ul.menu-links {
+    gap: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  ul.menu-links li a {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+    margin-right: 30px;
+  }
+  ul.menu-links li a:hover {
+    background-color: var(--color-terciario);
+    color: black;
+    font-size: 4rem;
+  }
+ 
+
+  .cards-block {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15%;
+    margin-left: 15%;
+  
+  }
+
+
+  #textDiv p, .forecastDiv, #forecast p{
+    font-size: 1.7rem;
+  }
+  
+  .card-3 p {
+font-size: 3rem;
+  }
+  
+#iconDiv img {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  margin: auto;
+}
+  
+
+
+  .title{
+    font-size: 4rem;
+  }
+
+  .title-cards {
+    font-size: 2.5rem;
+  }
+
+  .card-1, .card-2, .card-3 {
+    width: 33%;
+    display: block;
+    border: 2px solid rgb(162, 158, 158);
+    list-style: none;
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #f4f6f9;
+    color: black;
+    
+}
+
+.ubication-data, .social-media, .copy-right {
+
+  font-size: 2rem;
+}
+
+.ubication-data {
+  text-align: left;
+  margin-left: 15%;
+}
+.copy-right {
+  text-align: end;
+  margin-right: 15%;
+}
+}

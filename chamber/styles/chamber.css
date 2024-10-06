@@ -30,7 +30,8 @@ header {
 
 
 .header-section {
-display: inline-block;
+display: flex;
+flex-direction: row;
 
 }
 .name-image {
