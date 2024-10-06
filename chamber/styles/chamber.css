@@ -196,7 +196,7 @@ font-size: 2rem;
 top: 3.0rem;
 right: 1.5rem;
 z-index: 1;
-background-color:var(--color-secundario);
+
 border: none;
 }
 
@@ -402,7 +402,7 @@ font-weight: 800;
 }
 
 .grid-view {
-  grid-template-columns: repeat((auto-fit,minmax(200px, 1fr)));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5px;
   align-items: center;
   
@@ -493,6 +493,7 @@ flex-direction: row;
 margin: 0;
 gap:20px;
 max-width: 100%;
+
 }
 
 .ubication-data {
@@ -524,6 +525,7 @@ padding-top: 10px;
 padding-bottom: 30px;
 color:white;
 font-size: 1rem;
+
 
 }
 
