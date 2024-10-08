@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals Example</title>
+    <script src="scripts/modals.js"></script>
+    <link rel="stylesheet" href="styles/modals.css" />
+</head>
+<body>
+    <h1>Modals Example</h1>
+    <p>Los elementos modales en HTML se refieren a ventanas emergentes o cuadros de diálogo que aparecen sobre el contenido principal de una página web, bloqueando la interacción con el resto de la página hasta que el usuario interactúa con el modal (por ejemplo, cerrándolo o realizando una acción específica). Los modales se utilizan comúnmente para mostrar información importante, formularios, confirmaciones o mensajes sin redirigir al usuario a otra página.</p>
+    <button class="button open-button">Sign Up</button>
+
+    <dialog class="modal" id="modal">
+        <h2>Newsletter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="close-button">❌</button>
+        <form class="form" method="dialog">
+            <label>Name<input type="text"></label>
+            <label>Email<input type="email"></label>
+            <button class="button" type="submit">Sign Up</button>
+        </form>
+    </dialog>
+
+</body>
+</html>
