@@ -235,18 +235,17 @@ article {
 
 .buttons {
   display: flex;
-  margin:auto;
-  padding: 10px;;
-  gap:20px;
-  display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   max-width:100%;
   list-style: none;
-
+  margin: auto;
+  justify-content: center;
+  
 }
 
 .course-title {
-  color:rgb(146, 12, 39)
+  color:rgb(146, 12, 39);
+  font-weight: 700;
 }
 
 #All, #CSE, #WDD {
@@ -308,6 +307,96 @@ article {
   color:black;
 }
 
+/* Modals */
+
+.modal {
+  padding: 1em;
+  max-width: 40ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.5);
+  
+}
+
+body {
+  min-height: 100vh;
+  margin: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+
+
+.button {
+  border: 0;
+  cursor: pointer;
+  background: #333;
+  color: #eee;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+.button:hover,
+.button:focus {
+  background: purple;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+}
+
+form {
+  display: flex;
+  gap: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  padding: 20px;
+  align-content: center;
+  
+}
+
+input {
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+
+#popUps p .label {
+  font-weight: 700; 
+}
+
+
+#popUps p{
+  padding-top: 20px;
+  
+}
+s
+:modal {
+  background-color: beige;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px;
+ 
+
+}
+ /*FIN DE MODALS*/
+
+
+
+
+
 
 footer {
   display: block;
@@ -330,6 +419,10 @@ footer img {
   padding-top: 10px;
   color: rgb(249, 196, 64);
 }
+
+
+
+
 
 /* Larger Views ******************************/
 @media (min-width: 640px) {
@@ -419,81 +512,13 @@ footer img {
 }
 
 /* MODALS*/
+
 .modal {
   padding: 1em;
-  max-width: 50ch;
-  border: 0;
-  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  max-width: 100ch;
+
   
 }
-
-.modal::backdrop {
-  background: rgb(0 0 0 / 0.5);
-  
-}
-
-body {
-  min-height: 100vh;
-  margin: 2rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-
-
-.button {
-  border: 0;
-  cursor: pointer;
-  background: #333;
-  color: #eee;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-}
-
-.button:hover,
-.button:focus {
-  background: purple;
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: none;
-}
-
-form {
-  display: grid;
-  gap: 1em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(187, 190, 241);
-  margin-top: 10px;
-}
-
-input {
-  width: 100%;
-}
-
-h1,
-h2 {
-  margin: 0;
-}
-
-
-#popUps p .label {
-  font-weight: 700;
-  
-}
-
-
-
-:modal {
-  background-color: beige;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
- /*FIN DE MODALS*/
 
 }
 
