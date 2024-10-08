@@ -111,10 +111,9 @@ const courses = [
 const coursesElement = document.querySelector("#courses");
 const homeSection = document.querySelector("#homeTitle");
 
-//let templeList = [];
 
-//Recorrer la matriz y crear tarjetas del templo con: nombre, ubicac,
-//fecha dedicac, área, imagen y carga diferida (lazyloading)
+// Recorrer el directory y tomar el h3 de todos los cursos. Luego a cada curso
+//le crea un modal para despliegue un PopUp con los detalles del curso
 
 const displayCourses = (courses) => {
 
@@ -130,29 +129,35 @@ const displayCourses = (courses) => {
       h3.textContent = `${course.subject} ${course.number}`; 
       h3.classList.add("course-title");
     
-      const pTitle = document.createElement("p");
-      pTitle.innerHTML = `<span class="label"> Title: </span> ${course.title}`;
-
-      const pCredits = document.createElement("p");
-      pCredits.innerHTML = `<span class="label"> Credits: </span> ${course.credits}`;
-
-      const pCertificate = document.createElement("p");
-      pCertificate.innerHTML = `<span class="label"> Certificate: </span> ${course.certificate}`;
-
-      const pCompleted = document.createElement("p");
-    pCompleted.innerHTML = `<span class="label"> Completed: </span> ${course.completed ? "Yes" : "No"}`;
-      
       article.appendChild(h3);
-      article.appendChild(pTitle);
-      article.appendChild(pCredits);
-      article.appendChild(pCertificate);
-      article.appendChild(pCompleted);
+
+      article.addEventListener("click", ()=> {
+        displayCourseDetails(course);
+        modal.showModal();
+      });
 
       coursesElement.appendChild(article);
-      
 
-  });
- }
+    });
+
+};
+  
+
+const displayCourseDetails = (course) => {
+
+  const popUpsElement = document.querySelector("#popUps");
+
+    popUpsElement.innerHTML = `
+      <p class="course-title">${course.subject} ${course.number}</p>
+      <p><span class="label">Title: </span> ${course.title}</p>
+      <p><span class="label">Credits: </span> ${course.credits}</p>
+      <p><span class="label">Certificate: </span> ${course.certificate}</p>
+      <p><span class="label">Description: </span> ${course.description}</p>
+      <p><span class="label">Completed: </span> ${course.completed ? "Yes" : "No"}</p>
+    `;
+  };
+
+
 
  displayCourses(courses);
 
@@ -160,6 +165,25 @@ const displayCourses = (courses) => {
 const allLink = document.querySelector("#All");
 const cseLink = document.querySelector("#CSE");
 const wddLink = document.querySelector("#WDD");
+
+
+
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close-button");
+
+//No lo requiero pq el botón de cada curso me hace las veces de open button.
+//openModal.addEventListener("click", () => {
+//  modal.showModal();
+//});
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
+ 
+
+//Hasta aquí lo de modals
+
 
 
 allLink.addEventListener("click", (e) => {
@@ -214,8 +238,6 @@ calculateCredits(courses); // Calcular y mostrar los créditos
 
 
 
-
-
-
+ 
 
   
