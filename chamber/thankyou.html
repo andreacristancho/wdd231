@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  <!--THANKYOU.HTML-->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -13,19 +13,23 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="WDD 231 - Chamber of commerce">
     <meta property="og:image" content="https://andreacristancho.github.io/wdd231/chamber/images/chamber-logo.webp">
-    <meta property="og:url" content="https://andreacristancho.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://andreacristancho.github.io/wdd231/chamber/thankyou.html">
     <meta property="og:image" content="https://andreacristancho.github.io/wdd231/chamber/images/bogota-image-500px.webp">
     <meta name="twitter:card" content="summary">
 
 
-    
+   
     <link rel="stylesheet" href="styles/chamber.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    
+    <link rel="stylesheet" href="styles/joinus.css" />
+    <link rel="stylesheet" href="directory.html" />
+    <link rel="stylesheet" href="joinus.html" />
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/joinus.js" defer></script>
-   
+    <script src="scripts/thankyou.js" defer></script>
+    
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -59,7 +63,7 @@
               <ul class="menu-links">
                 <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li> 
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="joinus.html">Join</a></li>
+                <li><a href="">Join</a></li>
                 <li><a href="">Discover</a></li>
               </ul>
           </nav>
@@ -73,71 +77,18 @@
     
     <main>
       
-    <!--<div class="main-img">
-        <img src="images/bogota-img-500px.webp" alt="Banner Img">
-        <button>Keynote Tickets</button>
-      </div> -->
-
-    <div class="imageAndJoinUs">
-      <div>
-      <picture class="main-img">
-        <source srcset="images/bogota-img-1291px.webp" media="(min-width:1291px)">
-        <source srcset="images/bogota-img-956px.webp" media="(min-width:601px)">
-        <img 
-        src="images/bogota-img-500px.webp"  
-        srcset="images/bogota-img-500px.webp 500w, images/bogota-img-956px.webp 600w"
-        sizes="100vw"
-        alt ="Home Image">
-      </picture>
-      </div>
-
-      <div class="button-box">
-        <a href="joinus.html" id="join-us" class="button-style">Join Us</a>
-      </div>
-
-    
-
-
-
-    </div>
-
-      <h1 class="title">Home</h1>
-
-      <div class="cards-block">
-
-        <div class="card-1">
-          <h2 class="title-cards">Events</h2>
-        </div>
-      
-        <div class="card-2">
-          <h2 class="title-cards">Current Weather</h2>
-          <div id="weatherDiv">
-            <div id="iconDiv"></div>
-            <div id="textDiv"></div>
-          </div>
-        </div>
-      
-        <div class="card-3">
-          <h2 class="title-cards">Weather Forecast</h2>
-          <div id="forecast"></div>
-
-        </div>
+      <div class="Greeting-box">
         
+          <h1 id="Greeting">We will contact you soon!!</h1>
+          <div class="timestamp-box">
+          
+          <p id="timestampDisplay"></p> <!-- Añadido para mostrar el timestamp -->
+        </div>
+         
       </div>
-
-      <h1 class="title"> Member Business</h1>
-
-      <div class="togleView">
-        <button id="grid-view">⏹️Grid</button>
-        <button id="list-view">📄List</button>
-      </div>
-
-  
-
-      <div class="cards">
-   
-      </div>
-
+      
+        
+    
       
     </main>
 

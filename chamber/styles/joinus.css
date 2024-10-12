@@ -1,0 +1,226 @@
+/*FORM*/
+
+*{box-sizing: border-box;}
+html {
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
+}
+
+h1 {
+  color: #3D405B;
+}
+
+form {
+    margin: 1rem 2%;
+  
+    label {
+      display: block;
+      font-size: 1.2rem;
+      color: purple;
+      padding-top: .2rem;
+      text-align: left;
+      margin-top: 10px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      color: var(--color-fondo);
+      margin: 1.5rem 0 .2rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+
+  
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    input[type=hidden],
+    select {
+      display: block;
+      margin: .1rem 0 1rem  ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1.2rem;
+      color: #3D405B;
+      width: 250px;
+    }
+    
+    input[type=radio]{
+      margin-left: 20px;
+    }
+    input:required {border-left-color: #d70000;}
+    input:focus {border-left-color: black; outline:none;}
+    input:required:valid{border-left-color: green;}
+  
+    input[type=submit] {
+      border: none;
+      text-align: center;
+      background-color: var(--color-fondo);
+      color: white;
+      border-radius: 1rem;
+      padding: .75rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+     
+    }
+  }
+  input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+  }
+  
+  #results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+  }
+
+
+/*FIN DE FORM*/
+
+.name h1 {
+  color: white;
+}
+
+
+
+
+/* Greeting en Thankyou.html*/
+
+.Greeting-box {
+margin-top: 50px;
+height:200px;
+color: black;
+margin-bottom: 40px;
+
+}
+
+#Greeting {
+margin: auto;
+margin-top: 40px;
+margin-bottom: 40px;
+align-content: center;
+color: black;
+
+}
+
+.Greeting-box h1 {
+    color: black;
+}
+
+#timestampDisplay {
+  color:#2B2D42;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* ANMATIONS - EN PAG JOIN US CON LOS NIVELES */
+
+@keyframes cardsAnimation {
+    
+
+    0% {
+        font-size: 1.25rem;
+        background-color: var(--t-color);
+        transform: translate(90%);
+    }
+    50% {
+        transform: translate(-10%);
+    }
+    100% {
+        font-size: 1rem;
+        transform: translate(0%);
+    }
+    
+    }
+
+    #members-level-title{
+    color: #3D405B;
+    
+}
+
+#joinusAndLevels {
+  display: block;
+  margin:50px;
+  margin-left: 50px;
+  justify-content: center;
+  
+}
+
+.level_1, .level_2, .level_3, .level_4 {
+  border: 2px solid rgb(213, 211, 211); 
+  margin-bottom: 7px;
+  margin-top: 20px;
+  height: 100px;
+  align-content: center;
+}
+
+.level_1 {
+    background-color: rgb(238, 235, 217); /* Un gris neutro para nivel 1 */
+    color: black; 
+    font-size: 1.2rem;
+    
+  }
+  
+  .level_2 {
+    background-color: rgb(205, 127, 50); /* Color bronce */
+    color: white; 
+    font-size: 1.2rem;
+  }
+  
+  .level_3 {
+    background-color: rgb(192, 192, 192); /* Color plata */
+    color: black; 
+    font-size: 1.2rem;
+
+  }
+  
+  .level_4 {
+    background-color: rgb(255, 215, 0); /* Color oro *//* Texto negro para buen contraste */
+    font-size: 1.2rem;
+  }
+
+.NP {
+  border: solid var(--p-bcolor) 2px;
+  animation: cardsAnimation 2s;
+}
+
+.Bronze {
+    border: solid var(--p-bcolor) 2px;
+    animation: cardsAnimation 2s;
+}
+
+.Silver {
+    border: solid var(--p-bcolor) 2px;
+    animation: cardsAnimation 2s;
+}
+
+.Gold {
+    border: solid var(--p-bcolor) 2px;
+    animation: cardsAnimation 2s;
+}
+
+
+/* ----- LARGE VIEW JOINUS.CSS -- */
+
+@media only screen and (min-width: 500px) {
+
+    #joinusAndLevels {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        justify-content: center;
+        column-gap: 100px;
+      }
+
+      
+}

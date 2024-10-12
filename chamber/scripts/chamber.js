@@ -281,3 +281,8 @@ const displayForecast = (data) => {
 
 forecast();
 
+
+
+document.getElementById('join-us').addEventListener('click', function() {
+    window.location.href = 'joinus.html';
+});
