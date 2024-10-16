@@ -1,24 +1,32 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed&family=Russo+One&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #1d3557;
-  --secondary-color: #457b9d;
-  --accent1-color: #e63946;
-  --accent2-color: #f1faee;
+  --primary: #1d3557;
+  --secondary: #660708;
+  --accent1: #A4161A;
+  --accent2: #E5383B;
+  --grey_1: #B1A7A6;
+  --grey_2: #F5F3F4;
+  --grey_3: #FFFFFF;
+ 
 
+  
   /* change the values below to your chosen font(s) */
   --heading-font: "Russo One";
   --paragraph-font: Roboto Condensed, Poppins, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #1d3557; /* headlines on a white background */
-  --headline-color-on-color: #f1faee; /* headlines on a colored background */
-  --paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+  --headline-color-on-white: #0B090A; /* headlines on a white background */
+  --headline-color-on-color: #FFFFFF; /* headlines on a colored background */
+  --paragraph-color-on-white: black; /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
-  --paragraph-background-color: #396e94;
+  --paragraph-background-color: #A4161A;
   --nav-link-color: white;
   --nav-background-color: #1d3557;
   --nav-hover-link-color: white;
@@ -83,19 +91,20 @@ p {
 .colors td {
   width: 25%;
   height: 3em;
+  color:white
 }
 
 .primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
 }
 .secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
 }
 .accent1 {
-  background-color: var(--accent1-color);
+  background-color: var(--accent1);
 }
 .accent2 {
-  background-color: var(--accent2-color);
+  background-color: var(--accent2);
 }
 
 p.colored {
