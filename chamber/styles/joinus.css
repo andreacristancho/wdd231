@@ -21,9 +21,9 @@ form {
       text-align: left;
       margin-top: 10px;
     }
+
     h3 {
       font-size: 1.2rem;
-      color: var(--color-fondo);
       margin: 1.5rem 0 .2rem 0;
       border-bottom: 1px solid #eee;
     }
@@ -90,7 +90,7 @@ form {
 
 
 
-/* Greeting en Thankyou.html*/
+/* Greeting en Thankyou*/
 
 .Greeting-box {
 margin-top: 50px;
