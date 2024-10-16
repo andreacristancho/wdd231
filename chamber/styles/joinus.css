@@ -1,6 +1,7 @@
 /*FORM*/
 
 *{box-sizing: border-box;}
+
 html {
   -webkit-text-size-adjust: 100%; 
   -ms-text-size-adjust: 100%;
@@ -13,7 +14,7 @@ h1 {
 form {
     margin: 1rem 2%;
   
-    label {
+    .label {
       display: block;
       font-size: 1.2rem;
       color: purple;
@@ -51,6 +52,7 @@ form {
     input[type=radio]{
       margin-left: 20px;
     }
+
     input:required {border-left-color: #d70000;}
     input:focus {border-left-color: black; outline:none;}
     input:required:valid{border-left-color: green;}
@@ -69,6 +71,7 @@ form {
      
     }
   }
+
   input:-webkit-autofill{
     -webkit-text-fill-color: #3D405B;
   }
