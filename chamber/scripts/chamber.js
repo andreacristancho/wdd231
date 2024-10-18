@@ -166,13 +166,13 @@ const forecastDiv = document.getElementById("forecast");
 
  //CREATE REQUIRED VARIABLES FOR THE URL
 const myKey ="6ccfcd1ca0103252f02bb6825391a4b6"
-const myLat="49.76"
-const myLong="6.63"
+const myLat="4.61"
+const myLong="-74.07"
 
 
 //CONSTRUCT A FULL PATH USING TEMPLATE LITERALS
 
-const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 const url4d = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&units=metric&appid=${myKey}`;
       
 

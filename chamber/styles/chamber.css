@@ -303,7 +303,7 @@ background-color: #f4f6f9;
 
 .card-1 p, .card-2 p, .card-3 p {
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   
   
 }
@@ -376,8 +376,11 @@ margin-right: 20px;
 transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
 
 }
-
-
+/*
+.article img {
+  width: 100%;
+} */
+ 
 .business-title {
 color:#a70707;
 font: 1.5rem;
@@ -392,7 +395,7 @@ grid-template-rows: 1fr;
 
 }
 
-/* PARA GRID Y LIS VIEW*/
+/* PARA GRID Y LIST VIEW*/
 .togleView {
 margin: 1rem auto;
 border: 1px solid;
