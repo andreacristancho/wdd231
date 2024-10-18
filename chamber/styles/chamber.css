@@ -204,14 +204,16 @@ z-index: 1;
 border: none;
 }
 
+body {
+  margin:0;
+}
+
 main {
 max-width: 100%;
-margin-right:15px;
-margin-left:15px;
-
 display: block;
 text-align: center;
 align-items: center;
+
 
 }
 
@@ -220,11 +222,11 @@ align-items: center;
   height: 50%;
   display: flex;
   justify-content: center;
+  margin: 0;
 
 }
 .main-img img {
 width: 100%;
-height: 50%;
 object-fit: cover;
 }
 
@@ -268,9 +270,12 @@ object-fit: cover;
 .title {
   color: var(--color-primario)
 }
+
 .cards-block {
 border: #8D99AE;
 display: block;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 .title-cards {
@@ -293,8 +298,15 @@ margin: 10px;
 border-radius: 15px 15px 15px 15px;
 padding-bottom: 20px;
 background-color: #f4f6f9;
+
 }
 
+.card-1 p, .card-2 p, .card-3 p {
+  padding: 5px;
+  font-size: 1.5rem;
+  
+  
+}
 
 /* Sección Current Weather */
 
@@ -357,9 +369,12 @@ box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.1); /* Sombra suave */
 border-radius: 10px; /* Bordes redondeados */
 padding: 20px; /* Espaciado interno */
 background-color: #fff; /* Fondo blanco */
-margin:20px;
-margin:30px;
+margin-top:20px;
+margin-bottom:20px;
+margin-left: 20px;
+margin-right: 20px;
 transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+
 }
 
 
@@ -484,8 +499,15 @@ text-decoration: none;
   display: none;
   } 
 
+/*Dicover Aside*/
+.discover-grid {
+  display: block;
+}
 
-
+#discover-cards {
+  border: 2px solid;
+  margin:30px;
+}
 
 footer {
 background-color: var(--color-secundario);
