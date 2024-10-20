@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hamButton.classList.toggle("open");
   });
   
+
   const url = 'data/members.json';
   
   // Función para obtener los datos JSON
@@ -93,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       text.appendChild(addressMember);
       text.appendChild(num);
       text.appendChild(urlMember);
-      imgLogo.appendChild(portrait)
+      imgLogo.appendChild(portrait);
       grid.appendChild(text);
       grid.appendChild(imgLogo);
   

@@ -1,0 +1,20 @@
+[
+    {
+      "date": "2024-10-19",
+      "title": "Apple, Microsoft, and Amazon Lead Stock Market Gains",
+      "news": "Apple, Microsoft, and Amazon are driving stock market growth as part of the seven most influential companies in Wall Street. Their performance continues to push the Dow Jones to new heights, with further potential gains expected.",
+      "image": "images/ok-mobile-trading.webp"
+    },
+    {
+      "date": "2024-10-19",
+      "title": "Yuan Becomes China's Most Used Currency for Cross-Border Transactions",
+      "news": "In March, the yuan became the most used currency for cross-border transactions in China, surpassing the US dollar for the first time since records began, according to official data. This reflects Beijing's efforts to internationalize the use of the yuan.",
+      "image": "images/ok-divisas.webp"
+    },
+    {
+      "date": "2024-10-19",
+      "title": "Nvidia Reaches New High with 3% Gain, AI Boom Fuels Growth",
+      "news": "Nvidia has risen nearly 3% in the latest check and reached a new all-time high. The stock has surged 182% year-to-date and its value has tripled (203%) compared to last year, as the AI boom is in full swing.",
+      "image": "images/inversor.webp"
+    }
+  ]
