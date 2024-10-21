@@ -167,12 +167,26 @@ h3 {
 
   .title {
     text-align: center;
-    color:white;
+    color: white;
     margin-top: 20px;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     background-color: black;
     padding: 7px;
+    position: relative;
+    animation: slide-in 3s forwards; /* 3 segundos de animación */
   }
+  
+  /* Definimos la animación */
+  @keyframes slide-in {
+    0% {
+      left: -100%; /* Comienza fuera de la pantalla por la izquierda */
+    }
+    100% {
+      left: 0; /* Termina en la posición original */
+    }
+  }
+
+  
    /* Home - Cards */
 
    .cards {
