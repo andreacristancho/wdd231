@@ -6,7 +6,6 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const currentYear = new Date().getFullYear();
     document.getElementById("currentyear").textContent = currentYear;
@@ -50,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Función para mostrar los miembros en la página
   const displayNews = (news) => {
+
+    console.log("working..")
     
     const cards = document.querySelector("div.cards");
     cards.innerHTML = ""; // Limpiar el contenido previo
@@ -61,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
     
         // Título del miembro
         let h2 = document.createElement("h2");
-        h2.innerHTML = `<span class="titleNew"> ${newsItem.title}</span>`;
+        h2.innerHTML = `<span class="titleNews"> ${newsItem.title}</span>`;
     
         let h3 = document.createElement("h3");
-        h3.innerHTML = `<span class="dateNew"> ${newsItem.date}</span>`;
+        h3.innerHTML = `<span class="dateNews"> ${newsItem.date}</span>`;
     
         let p = document.createElement("p");
         p.innerHTML = `${newsItem.news}`;
@@ -73,22 +74,29 @@ document.addEventListener("DOMContentLoaded", function () {
         imgNews.classList.add("imgNews");
 
            // Imagen del miembro
-      let portrait = document.createElement("img");
-      portrait.setAttribute("src", newsItem.image);
-      portrait.setAttribute("alt", newsItem.date);
-      portrait.setAttribute("loading", "lazy");
-      portrait.setAttribute("width", "85");
-      portrait.setAttribute("height", "110");
+        let portrait = document.createElement("img");
+        portrait.setAttribute("src", newsItem.image);
+        portrait.setAttribute("alt", newsItem.date);
+        portrait.setAttribute("loading", "lazy");
+        portrait.setAttribute("width", "85");
+        portrait.setAttribute("height", "110");
 
   
       // Agregar título, estadísticas y la imagen a la tarjeta
-      card.appendChild(h2);
-      card.appendChild(h3);
-      card.appendChild(p);
-      imgNews.appendChild(portrait);
-      card.appendChild(imgNews);
-  
-      // Añadir la tarjeta al contenedor de cards
-      cards.appendChild(card);
+        card.appendChild(h2);
+        card.appendChild(h3);
+        card.appendChild(p);
+        imgNews.appendChild(portrait);
+        card.appendChild(imgNews);
+      
+        // Añadir la tarjeta al contenedor de cards
+        cards.appendChild(card);
     });
   };
+
+getNews();
+
+
+
+
+
