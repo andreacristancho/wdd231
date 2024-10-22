@@ -14,7 +14,7 @@
     width: 100%;
     margin: 0;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .name-logo {
@@ -92,7 +92,6 @@ body {
 
   nav a {
     display: none;
-    padding: 5px;
     flex-direction: column;
     font-size: 1.2rem;
     text-align: center;
@@ -125,7 +124,7 @@ body {
   nav a:hover {
   text-align: center;
   background-color: #660708;
-  padding: 10px 10px;
+  color: white;
   }
 
   #dark-button { /*REVISAR ESTE COD DE DARK Y MIRAR JS*/
@@ -141,7 +140,7 @@ body {
 
   .welcome {
     
-    background-color: rgb(209, 206, 206)
+    background-color: rgb(223, 218, 218)
     
   }
 
@@ -151,7 +150,7 @@ img {
               0 8px 24px rgba(0, 0, 0, 0.2); /* Sombra más difusa y extendida */
     border-radius: 10px; /* Esquinas redondeadas (opcional) */
     transition: transform 0.3s ease-in-out;
-    margin:15px;
+    margin:10px;
     margin-top: 40px;
   }
 
@@ -160,9 +159,10 @@ h3 {
     color: #023d69;
     margin: 20px;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     font-size: 1.2rem;
-   
+    line-height: 1.7
+    ;
   }
 
   .title {
@@ -186,13 +186,13 @@ h3 {
     }
   }
 
-  
+
    /* Home - Cards */
 
    .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
     justify-content: center;
   }
   
@@ -201,8 +201,8 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 5px;
     text-align: center;
   }
   
@@ -244,6 +244,30 @@ h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
     
     }
+
+    /* Info button */
+
+    .info-button {
+      display: flex;
+      justify-content: center; /* Para centrar el botón dentro del div */
+      margin: 20px; /* Espaciado opcional alrededor del div */
+  }
+  
+  .info {
+      padding: 15px 30px; 
+      background-color: var(--color-rojoclaro); 
+      color: var(--color-neutro); 
+      border: none; 
+      border-radius: 8px; 
+      cursor: pointer; /* Cambio de cursor al pasar el ratón */
+      transition: background-color 0.3s; 
+      font-size: 1.2rem;
+      font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .info:hover {
+      background-color: #45a049; /* Cambio de color al pasar el ratón */
+  }
 
   footer {
     background-color: var(--color-azulosc);

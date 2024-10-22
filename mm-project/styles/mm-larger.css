@@ -1,0 +1,214 @@
+@media only screen and (min-width: 500px) {
+
+    :root {
+        --color-azulosc: #161A1D;  
+        --color-rojoosc: #660708; 
+        --color-rojoclaro:  #BA181B;  
+        --color-gris: #B1A7A6;     
+        --color-grisclaro: #B1A7A6;  
+        --color-neutro: #F5F3F4;  
+      }
+
+    .header-section  {
+      width: 100%;
+      margin: 0;
+      font-size: 2rem;
+      
+    }
+
+    .name h1 {
+        margin: 15px;
+    }
+
+    .name-logo {
+      
+        margin-bottom: 40px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        gap: 60px;
+        }
+
+    
+
+        nav a {
+            display: flex;
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            margin: 10px;
+            
+        }
+
+        button#menu {
+            display: none;
+        }
+ 
+        nav .open {
+            display: flex;
+            flex-direction: row;
+           column-gap: 60px;
+          }
+        
+          nav a:hover {
+            text-align: center;
+            padding: 10px 10px;
+            background-color: #660708;
+            color: white;
+            }
+    
+            .current-menu-item {
+                margin: 0;
+                border-radius: 5%;
+              }
+
+            .current-menu-item a{
+              color:white;
+            }
+            
+            
+        #dark-button { /*REVISAR ESTE COD DE DARK Y MIRAR JS*/
+        font-size: 1.8rem;
+        position: absolute;
+        font-size: 2rem;
+        top: 1.5rem;
+        right: 1rem;
+        z-index: 1;
+       
+          }
+            
+        .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50PX;
+        }
+
+        .main-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px;
+            
+          }
+
+       
+        
+
+          /* News Articles */
+          .carousel.container {
+            margin-left: 15%;
+            margin-right: 15%
+          }
+          
+          h3 {
+            font-size: 2.2rem;
+          }
+
+          .title {
+            font-size: 2.3rem;
+          }
+
+          .titleNews {
+            font-size: 1.8rem;
+          }
+
+          .dateNews {
+            font-size: 1.8rem;
+          }
+          .article p {
+            font-size: 1.6rem;
+            line-height: 100%;
+          }
+        
+
+         /* Info button */
+
+    
+        
+        .info {
+            padding: 20px 40px; 
+            font-size: 2rem;
+            margin-bottom: 50px;
+     
+        }
+        
+        .info:hover {
+            background-color: #45a049; /* Cambio de color al pasar el ratón */
+        }
+  
+
+        
+
+          .footer-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+          }
+          footer {
+            font-size: 1.2rem;
+            padding: 15px;
+          }
+          .social-media img {
+            margin-left: 5%;
+            width: 20%;
+            }
+        #lastModified {
+            font-size: 1rem;
+            text-align: center;
+        }
+    
+}
+
+/* -- MIN WIDTH 1080PX ----- */
+
+@media only screen and (min-width: 1080px) {
+
+
+    .title {
+        position: relative;
+        animation: slide-in 6s forwards; /* 3 segundos de animación */
+      }
+    .article {
+        width: 30%;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    footer {
+        
+        font-size: 1.5rem;
+        padding: 15px;
+        padding-left: 40px;
+        padding-top: 30px;
+      }
+    .footer-items {
+        align-items: center;    
+    }
+
+    .copy-right {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        font-size: 1.8rem;
+       
+    }
+    #lastModified {
+      
+        font-size: 1.6rem;
+    }
+
+    .social-media img {
+        width:20%;
+    }
+}
