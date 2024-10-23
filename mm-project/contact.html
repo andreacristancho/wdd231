@@ -22,9 +22,11 @@
     <link rel="stylesheet" href="styles/mm-base.css" /> 
     <link rel="stylesheet" href="styles/mm-larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <!--<link rel="stylesheet" href="styles/mm-contactus.css" /> -->
-   
-    <!--<script src="scripts/contactus.js" defer></script>-->
+    <link rel="stylesheet" href="styles/contact.css" />
+    <script src="scripts/mm.js" defer></script>
+  
+    
+    <script src="scripts/contact.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,16 +51,15 @@
             <h1>Market Monitor</h1>
             <button id="dark-button">🌓</button> 
           </div> 
-        </div> 
-     
+        </div>
         
         <div class = "nav-menu">
           <nav>      
             <button id="menu"></button>
               <ul class="menu-links">
-                <li class="current-menu-item"><a href="mm-project.html" title="Home">Home</a></li> 
+                <li><a href="mm-project.html">Home</a></li>
                 <li><a href="market-prices.html">Market Prices</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li class="current-menu-item"><a href="contact.html" title="Contact">Contact Us</a></li> 
               </ul>
           </nav>
         </div>
@@ -67,37 +68,30 @@
 
     <main>
 
-      <div class="welcome">
         
-        <picture class="main-img">
-          <source srcset="images/ok-banner-1280px.webp" media="(min-width:1280px)">
-          <source srcset="images/ok-banner-600px.webp" media="(min-width:600px)">
-          <img  
-          src="images/ok-banner-1280px.webp"  
-          srcset="images/ok-banner-600px.webp 600w, images/ok-banner-1280px.webp 1280w"
-          sizes="100vw"
-          alt ="Home Image">
-        </picture>
-     
+      <section id="joinusAndLevels">
+        <div class="join-us-box">
+          <h2>CONTACT US</h2>
+  
+          <form method="GET" action="thankyou.html" class="designOne" id="joinForm">
+            <label class="label">First Name <input type="text" id="first-name" name="first" required autocomplete="given-name" title="Your First Name"></label>
+              <label class="label">Last Name <input type="text" id="last-name" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+              <label class="label">Email <input type="email" name="email" required placeholder="afc@gmail.com"  title="Your Email" autocomplete="email"></label>
+              <label class="label">Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+              <label class="label" for="request">Your Request</label>
+              <textarea name="reason for inquiry" title="description" id="request"></textarea>
+    
+              <label><input type="hidden" name="timestamp" id="timestampDisplay"></label>
+  
+              <label><input type="submit" value="Contact Market Monitor"></label>
+              
+          </form>
+        </div>       
+      </section>
+  
 
-        <h3 class="welcome"> Welcome to our website, where you'll find up-to-date stock market information. 
-          Explore key asset prices and learn how to contact us for more details and professional advice.</h3>
-        
-          </div>
 
-          <div class="info-button">
-            <button class="info">I wish more info</button>
-          </div>
-
-
-          <div class="carousel">
-            <h2 class="title">NEWS</h2>
-            <!--<button id="prevBtn">&#8249;</button> -->
-            <div class="carousel-container">
-                <div class="cards"></div>
-            <!--  <button id="nextBtn">&#8250;</button> -->
-            </div>
-        </div>
+      
 
       
     </main>
@@ -125,7 +119,7 @@
       
     </footer>
 
-    <script src="scripts/mm.js" defer></script>
+
   </body>
 
 
