@@ -60,7 +60,7 @@ form {
     input[type=submit] {
       border: none;
       text-align: center;
-      background-color: var(--color-fondo);
+      background-color: var(blue);
       color: white;
       border-radius: 1rem;
       padding: .75rem 1.5rem;

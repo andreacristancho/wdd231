@@ -21,10 +21,13 @@
     }
 
     .name-logo {
-      
         margin-bottom: 40px;
       }
 
+      .name-logo img {
+        margin-top:30px;
+        max-width: 90%;
+      }
       nav ul {
         display: flex;
         flex-direction: row;
@@ -32,8 +35,6 @@
         padding: 5px;
         gap: 60px;
         }
-
-    
 
         nav a {
             display: flex;
@@ -56,9 +57,8 @@
         
           nav a:hover {
             text-align: center;
-            padding: 10px 10px;
-            background-color: #660708;
-            color: white;
+            background-color: rgb(254, 252, 252);
+            color:black;
             }
     
             .current-menu-item {
@@ -155,13 +155,18 @@
             font-size: 1.2rem;
             padding: 15px;
           }
+
+          .social-media {
+            align-content: center;
+          }
           .social-media img {
             margin-left: 5%;
             width: 20%;
+          
             }
         #lastModified {
             font-size: 1rem;
-            text-align: center;
+            text-align: left;
         }
     
 }

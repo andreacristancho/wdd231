@@ -1,4 +1,13 @@
 /*FORM*/
+:root {
+  --color-azulosc: #161A1D;  
+  --color-rojoosc: #660708; 
+  --color-rojoclaro:  #BA181B;  
+  --color-gris: #B1A7A6;     
+  --color-grisclaro: #B1A7A6;  
+  --color-neutro: #F5F3F4;  
+}
+
 
 *{box-sizing: border-box;}
 
@@ -60,6 +69,7 @@ form {
       font-size: 1.2rem;
       color: #3D405B;
       width: 250px;
+      
     }
     
 
@@ -71,7 +81,7 @@ form {
       border: none;
       text-align: center;
       background-color: var(--color-fondo);
-      color: white;
+      color:black;
       border-radius: 1rem;
       padding: .75rem 1.5rem;
       margin: 2rem 0;
@@ -86,45 +96,51 @@ form {
     -webkit-text-fill-color: #3D405B;
   }
   
-  #results {
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
-    border-radius: 6px;
+  
+  #submit-button {
+    background-color: var(--color-rojoosc);
+    color: var(--color-neutro);
+    width:400px;
+    font-size: 2rem;
   }
-
 
 /*FIN DE FORM*/
 
-.name h1 {
-  color: white;
+h2{
+  text-align: center;
+  
 }
 
 
+main {
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  margin:30px;
 
+}
+#results {
+  background-color: var(--color-neutro);
+  padding: 1.5rem;
+  border: 1px solid #E07A5F;
+  border-radius: 6px;
+  margin: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  
+}
+#results p{
+margin-bottom: 10px;
+font-size: 1.1rem;
+  
+}
 
-/* Greeting en Thankyou*/
-
-.Greeting-box {
-margin-top: 50px;
-height:200px;
-color: black;
-margin-bottom: 40px;
+.label-1 {
+  font-weight: bold; /* Aplicar negrilla (bold) */
 
 }
 
-#Greeting {
-margin: auto;
-margin-top: 40px;
-margin-bottom: 40px;
-align-content: center;
-color: black;
 
-}
-
-.Greeting-box h1 {
-    color: black;
-}
 
 #timestampDisplay {
   color:#2B2D42;
@@ -138,3 +154,98 @@ color: black;
   font-size: 1.2rem;
   margin-bottom: 40px;
 }
+
+/* -----MEDIA QUERY MIN 500PX---- */
+
+@media only screen and (min-width: 500px) {
+
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  .join-us-box {
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+ #joinForm {
+    justify-content: center;
+  }
+
+
+  form {
+    margin: 2rem 2%;
+    border: 2px solid #ccc; /* Establece el borde con color gris y grosor de 2px */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    padding: 50px;
+
+
+  
+    .label {
+      font-size: 1.8rem;
+      padding-top: .5rem;
+    }
+    
+    h3 {
+      font-size: 1.2rem;
+      margin: 1.5rem 0 .2rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+
+  
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=hidden],
+    select {
+      font-size: 1.5rem;
+      width:600px;
+      
+    }
+  
+   
+    input[type=submit] {
+    
+      font-size: 1.5rem;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    #request {
+      width:600px;
+      
+    }
+  }
+
+
+  /* Greeting en Thankyou VIEW LARGE MIN 1000PX*/
+
+  .welcome-thanks {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #results {
+    margin-left: 130px;
+    margin-right: 130px;
+    text-align: center;
+    margin-bottom: 150px;
+    
+  }
+  #results p{
+  margin-top: 40px;
+    margin-bottom: 0px;
+  font-size: 1.8rem;
+    
+  }
+  
+ #results .label-2 {
+    font-size: 2.5rem;
+    color: #284c68;
+ }
+
+}
+

@@ -23,10 +23,8 @@
     <link rel="stylesheet" href="styles/mm-larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/contact.css" />
-    <link rel="stylesheet" href="thankyou.html" />
-    
-    <script src="scripts/mm.js"></script>
-    <script src="scripts/contact.js" defer></script>
+    <link rel="stylesheet" href="contact.html" />
+    <script src="scripts/mm.js" defer></script>
     <script src="scripts/thankyou.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,8 +57,8 @@
             <button id="menu"></button>
               <ul class="menu-links">
                 <li><a href="mm-project.html">Home</a></li>
-                <li><a href="market-prices.html">Market Prices</a></li>
-                <li class="current-menu-item"><a href="contact.html" title="Contact">Contact Us</a></li> 
+                <li class="current-menu-item"><a href="market-prices.html" title="Market Prices">Market Prices</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
               </ul>
           </nav>
         </div>
@@ -69,29 +67,19 @@
 
     <main>
 
+        <p class="welcome-thanks"> Welcome to Market Monitor</p>
+        <div id="results"></div>
         
-      <section id="joinusAndLevels">
-        <div class="join-us-box">
-          <h2>CONTACT US</h2>
-  
-          <form method="GET" action="thankyou.html" class="designOne" id="joinForm">
-            <label class="label">First Name <input type="text" id="first-name" name="first" required autocomplete="given-name" title="Your First Name"></label>
-              <label class="label">Last Name <input type="text" id="last-name" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-              <label class="label">Email <input type="email" name="email" required placeholder="afc@gmail.com"  title="Your Email" autocomplete="email"></label>
-              <label class="label">Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-              <label class="label" for="request">Your Request</label>
-              <textarea name="reason for inquiry" title="description" id="request"></textarea>
+<!--  <div class="Greeting-box">
+        
+        <h1 id="Greeting">We will contact you soon!!</h1>
+        <div class="timestamp-box">
+        
+        <p id="timestampDisplay"></p> Añadido para mostrar el timestamp 
+      </div> --> 
+       
+    </div>
     
-              <label><input type="hidden" name="timestamp" id="timestampDisplay"></label>
-  
-              <label><input type="submit" value="Contact Market Monitor" id="submit-button"></label>
-              
-          </form>
-        </div>       
-      </section>
-  
-
-
       
 
       

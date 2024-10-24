@@ -1,9 +1,11 @@
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector("nav");
+document.addEventListener('DOMContentLoaded', () => {
+  const hamButton = document.querySelector("#menu");
+  const navigation = document.querySelector("nav");
 
-hamButton.addEventListener("click", () => {
-  navigation.classList.toggle("open");
-  hamButton.classList.toggle("open");
+  hamButton.addEventListener("click", () => {
+      navigation.classList.toggle("open");
+      hamButton.classList.toggle("open");
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("working..")
     
-    const cards = document.querySelector("div.cards");
+    const cards = document.querySelector(".cards");
     cards.innerHTML = ""; // Limpiar el contenido previo
   
 

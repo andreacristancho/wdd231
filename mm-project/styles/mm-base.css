@@ -26,7 +26,7 @@
 
   .name-logo img {
     margin-top:30px;
-    max-width: 20%;
+    max-width: 50%;
   }
 
 body {
@@ -75,6 +75,7 @@ body {
   #menu.open::after{
     content: "X";
     background-color: var(--color-neutro);
+    color: var(--color-azulosc);
     position: absolute;
     top: 0rem;
     right: 0.2rem;
@@ -99,7 +100,7 @@ body {
 
   .menu-links {
     align-items: start;
-    background-color: var(--color-rojoclaro);
+    background-color: var(--color-rojoosc);
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 20px;
@@ -116,15 +117,12 @@ body {
     text-decoration: none; /* Quita la línea de subrayado */
   }
 
-  .active::before {
-    content: "✔︎";
-    color: var(--color-azulosc);
-  }
+
 
   nav a:hover {
   text-align: center;
-  background-color: #660708;
-  color: white;
+  background-color: rgb(254, 252, 252);
+  color: black;
   }
 
   #dark-button { /*REVISAR ESTE COD DE DARK Y MIRAR JS*/
