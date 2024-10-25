@@ -174,7 +174,7 @@ h3 {
     animation: slide-in 3s forwards; /* 3 segundos de animación */
   }
   
-  /* Definimos la animación */
+  /* Definimos la animación en NEWS*/ 
   @keyframes slide-in {
     0% {
       left: -100%; /* Comienza fuera de la pantalla por la izquierda */
@@ -253,7 +253,7 @@ h3 {
   
   .info {
       padding: 15px 30px; 
-      background-color: var(--color-rojoclaro); 
+      background-color:green;
       color: var(--color-neutro); 
       border: none; 
       border-radius: 8px; 
@@ -264,9 +264,24 @@ h3 {
   }
   
   .info:hover {
-      background-color: #45a049; /* Cambio de color al pasar el ratón */
+      background-color: #f4d58d;
+      color: black; /* Cambio de color al pasar el ratón */
   }
 
+/* -- MODALS POPUS EN STOCK MARKET PRICES --*/
+
+.modal {
+  padding: 1em;
+  max-width: 40ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.5);
+  
+}
 
 
 

@@ -131,14 +131,17 @@
     
         
         .info {
+            background-color: #45a049; 
             padding: 20px 40px; 
             font-size: 2rem;
             margin-bottom: 50px;
+            width: 400px;
      
         }
         
         .info:hover {
-            background-color: #45a049; /* Cambio de color al pasar el ratón */
+            
+            background-color: #f4d58d;/* Cambio de color al pasar el ratón */
         }
   
 
@@ -189,6 +192,15 @@
         margin-left: 50px;
         margin-right: 50px;
     }
+
+    .info {
+      padding: 12px;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      width: 600px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+  }
 
     footer {
         

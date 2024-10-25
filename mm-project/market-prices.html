@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <script src="scripts/mm.js" defer></script>
+    <script src="scripts/market-prices.js" defer></script>
 
     
     <script src="scripts/contact.js" defer></script>
@@ -67,11 +68,20 @@
 
     <main>
 
-        
-    <div class="prices-container">
-        <div id="prices">prices</div>
+      <div>
+      <h1>Stock Market Prices</h1>
+      <button onclick="getStockPrices()">Get Stock Prices</button>
+      <div id="prices-display"></div>
+      <dialog class="modal" id="modal">
+        <button class="close-button">❌</button>
+          <form class="form" method="dialog">
+            <div id="popUps"></div>
+          </form>
+      </dialog>
+    </div>
+     
 
-    </div>    
+
     
     <div class="info-button">
       <button class="info">I wish more info</button>
