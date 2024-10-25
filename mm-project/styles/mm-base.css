@@ -268,20 +268,7 @@ h3 {
       color: black; /* Cambio de color al pasar el ratón */
   }
 
-/* -- MODALS POPUS EN STOCK MARKET PRICES --*/
 
-.modal {
-  padding: 1em;
-  max-width: 40ch;
-  border: 0;
-  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
-  
-}
-
-.modal::backdrop {
-  background: rgb(0 0 0 / 0.5);
-  
-}
 
 
 
