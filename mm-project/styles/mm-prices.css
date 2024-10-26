@@ -7,9 +7,11 @@ root {
     --color-neutro: #F5F3F4;  
   }
 
-  div button{
+  .prices-button{
     margin-bottom: 70px;
     padding: 20px;
+   
+
   }
 
 .article {
@@ -49,6 +51,36 @@ root {
     margin-top: 100px;
 }
 
+
+
+/* Images Filter */
+
+
+
+#imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#imageContainer img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#imageContainer img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
 @media only screen and (min-width: 800px) {
 
 main {
@@ -60,7 +92,7 @@ text-align: center;
 
 .modal {
     padding: 1em;
-    width: 400px;
+    max-width: 700px;
     font-size: 1.8rem;
     border: 0;
     box-shadow: 0 0 1em rgb(0 0 0 / 0.3);

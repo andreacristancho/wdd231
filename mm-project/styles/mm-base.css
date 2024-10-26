@@ -253,8 +253,8 @@ h3 {
   
   .info {
       padding: 15px 30px; 
-      background-color:green;
-      color: var(--color-neutro); 
+      background-color: #fca311;
+      color: black;
       border: none; 
       border-radius: 8px; 
       cursor: pointer; /* Cambio de cursor al pasar el ratón */
