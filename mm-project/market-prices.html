@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="styles/mm-prices.css" />
     <script src="scripts/mm.js" defer></script>
     <script src="scripts/market-prices.js" defer></script>
+    <script src="scripts/filter-images.js" defer></script>
+
 
     
     <script src="scripts/contact.js" defer></script>
@@ -72,7 +74,7 @@
 
       <div>
       <h1>Stock Market Prices</h1>
-      <button onclick="getStockPrices()">Get Stock Prices</button>
+      <button class="prices-button" onclick="getStockPrices()">Get Stock Prices</button>
       <div id="prices-display"></div>
       <dialog class="modal" id="modal">
         <button class="close-button">❌</button>
@@ -88,7 +90,15 @@
       <button class="info" onclick="window.location.href='contact.html';">I wish more info</button>
     </div>
 
-
+    <h1>Image Filter Free</h1>
+    <p>Choose the image you need for your project</p>
+    <select id="imageFilter" onchange="filterImages()">
+        <option value="All">All</option>
+        <option value="Trading">Trading</option>
+        <option value="Investors">Investors</option>
+        <option value="Crypto">Crypto</option>
+    </select>
+    <div id="imageContainer"></div>
       
 
       
